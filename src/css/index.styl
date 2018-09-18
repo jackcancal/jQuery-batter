@@ -1,0 +1,363 @@
+.wrap
+  width 100%
+  .content-header
+    width 100%
+    box-sizing border-box
+    height 70px
+    padding 2.5px 0
+    &.header-fixed
+      position fixed
+      z-index 20
+      background-color: #fff;
+      top: 0
+      left: 0
+      height 0
+      overflow hidden
+      opacity 0
+      transition all .5s
+      &.active
+        height 70px
+        opacity 1
+    .header
+      width 1200px
+      height 100%
+      background-color #fff
+      box-sizing border-box
+      padding 0 15px
+      margin 0 auto
+      display flex
+      justify-content space-between
+      align-items center
+      .location-nav
+        width 727.88px
+        height 42px
+        display flex
+        justify-content space-between
+        .location
+          width 151px
+          height 42px
+          display flex
+          justify-content space-around
+          align-items center
+          >span
+            font-weight bold
+            color black
+        .header-nav
+          display flex
+          .header-nav-item
+            font-weight bold
+            padding 10px 15px
+            >a
+              line-height 26px
+              text-align center
+              &.active
+                color red
+          .item-login
+            >a
+              background-color #f00
+              color white
+              display block
+              width 76px
+              height 28px
+              border-radius 5px
+  .content-swiper
+    width 100%
+    position relative
+    .swiper-container
+      width 100%
+      .swiper-wrapper
+        width 100%
+        .swiper-slide
+          width 100%
+          >img
+            display block
+      .swiper-pagination
+        .swiper-pagination-bullet-active
+          background-color #f00
+    .nav-list
+      top 0
+      z-index 2
+      left 380px
+      position absolute
+      width 180px
+      height 100%
+      background-color #757881
+      .list
+        width 100%
+        height 100%
+        .item-list
+          width 100%
+          height 10%
+          .list-name
+            width 100%
+            height 100%
+            text-align center
+            color white
+            display flex
+            align-items center
+            font-size 16px
+            font-weight bold
+            >span
+              margin-left 50px
+              letter-spacing 3px
+            .img-right
+              margin-left 20px
+            .img-icon
+              margin-left 47px
+              display none
+          &:hover
+            background-color rgb(96, 100, 109)
+          &:hover .list-detail
+            display block
+          &:hover .img-right
+            display none
+          &:hover .img-icon
+            display block
+          .list-detail
+            display none
+            width 100%
+            height 100%
+            position absolute
+            left 100%
+            top 0
+            background-color rgba(255, 255, 255, .9)
+            .detail-item
+              height 10%
+              font-size 16px
+              display flex
+              justify-content center
+              align-items center
+              text-align center
+              font-weight bold
+              &:hover a
+                color red
+              >a
+                color black
+  .content-main
+    width 100%
+    background-color rgb(251, 248, 248)
+    .main-search
+      width 860px
+      margin 60px auto 0
+      height 56px
+      line-height 54px
+      border 2px solid #e94840
+      background-color #fff
+      border-radius 4px
+      font-size 18px
+      position relative
+      .search-icon
+        display block
+        width 22px
+        height 22px
+        position absolute
+        margin-top 18px
+        margin-left 20px
+      .search
+        border none
+        height 40px
+        outline none
+        padding-left 80px
+      .to-search
+        width 20%
+        text-align center
+        background-color #e94840
+        color #fff
+        float right
+        height 100%
+    .main-container
+      width 100%
+      padding-bottom 20px
+      &:nth-of-type(2n-1)
+        background-color: #fff;
+      .main-sever
+        width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0 0;
+        .sever-header
+          width 100%
+          height: 71px
+          display flex
+          flex-direction column
+          justify-content space-between
+          .header-title
+            height 31px
+            line-height 31px
+            font-size 28px
+            text-align center
+            font-weight bold
+          .header-desc
+            height 25px
+            width 100%
+            position relative
+            font-size 22px
+            font-weight lighter
+            .desc-text
+              width 100%
+              text-align center
+              position absolute
+              font-size 21px
+              left 50%
+              transform translateX(-50%)
+              >a
+                transition color 1s
+                padding 0 2px
+                &:hover
+                  color red
+            .more-sever
+              float right
+        .sever-tag
+          width 100%
+          height 375px
+          .tag-list
+            margin-top: 20px;
+            display flex
+            justify-content space-between
+            .tag-item
+              padding: 10px;
+              width: 230px;
+              box-sizing border-box
+              border: 1px solid #eaeaea;
+              background: #fff;
+              cursor: pointer;
+              height: 345px;
+              &:hover
+                box-shadow 3px 2px 2px 1px #eee
+              >a
+                width 100%
+                height 100%
+                display block
+                >img
+                  width 100%
+                >h4
+                  margin-top: 10px;
+                .desc
+                  font-size 13px
+                  color #7e8c8d
+                  display block
+                  line-height 18px
+                  margin-top 10px
+                .price-detail
+                  display flex
+                  justify-content space-between
+                  align-items center
+                  padding 10px
+                  margin-top: 5px;
+                  .price
+                    color red
+                    .num
+                      font-size 20px
+                      font-weight bold
+                  .detail
+                    background-color: #f00;
+                    padding 5px 10px
+                    border-radius 5px
+                    color white
+                    font-size 14px
+        .sever-other
+          width: 1200px;
+          box-sizing border-box
+          line-height: 32px;
+          padding: 10px;
+          border: 1px solid #e5e5e5;
+          margin: 20px auto 0;
+          text-align: justify;
+          >a
+            margin: 0 6px;
+            transition color 1s
+            &:first-of-type
+              margin-left 0
+            &:hover
+              color red
+  .footer
+    width: 100%;
+    padding-top: 100px;
+    .safeguard
+      width 100%
+      text-align center
+      .safeguard-title
+        font-size 28px
+        padding-bottom 15px
+        >span
+          color red
+      .safeguard-desc
+        font-size 23px
+        font-weight normal
+      .safeguard-promise
+        display flex
+        margin-top 20px
+        justify-content center
+        .safeguard-icon
+          display flex
+          margin: 0 10px;
+          justify-content center
+          align-items center
+          >span
+            font-size 18px
+          >img
+            width 22px
+            height: 22px
+            margin: 0 10px;
+    .hot-city-wrapper
+      width 100%
+      margin-top: 50px;
+      .hot-city
+        width 1200px
+        height 120px
+        margin 0 auto
+        display flex
+        box-sizing border-box
+        .hot-city-title
+          font-size 18px
+          text-align center
+          width 80px
+          font-weight bold
+        .hot-city-name
+          width: 1090px
+          height: 93px
+          display flex
+          flex-wrap wrap
+          margin-left: 50px;
+          .city-name
+            width: 98.09px
+            height: 30px
+            >a
+              color #7e8c8d
+    .partner-wrapper
+      width 100%
+      background-color: rgb(251, 248, 248);
+      .partner
+        width 1200px
+        margin: 0 auto;
+        .partner-title
+          font-size 18px
+          font-weight bold
+          margin-left: 5px;
+          height 60px
+          line-height 60px
+        .partner-img
+          width 100%
+          display flex
+          margin-bottom: 10px;
+          justify-content space-between
+          .img
+            width: 120px
+            background-color: #fff;
+            height: 60px
+            box-sizing border-box
+            padding 10px
+            >a
+              >img
+                width: 100%
+                height: 100%;
+    .copyright-wrapper
+      width 100%
+      background-color: rgb(251, 248, 248);
+      padding-bottom: 20px;
+      .copyright
+        width: 1200px;
+        margin: 20px auto 0;
+        text-align: left;
+        color #7e8c8d
+
+

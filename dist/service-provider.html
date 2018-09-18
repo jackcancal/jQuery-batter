@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>service-provider</title><link rel="stylesheet" href="css/service-provider.css"><link rel="stylesheet" href="css/reset.css"></head><body><div class="wrap"><div class="content-header header-fixed"><header class="header"><a class="logo"><img src="./images/logo.png" alt="logo"></a><div class="location-nav"><a class="location"><img class="city-icon" src="./images/citypoint.png" alt="cityIcon"> <span class="city-name">北京</span> <span class="checkout-city">切换城市</span></a><ul class="header-nav"><li class="header-nav-item"><a href="">首页</a></li><li class="header-nav-item"><a href="">到位App</a></li><li class="header-nav-item"><a class="active" href="">服务商</a></li><li class="header-nav-item"><a href="">商家入驻</a></li><li class="header-nav-item"><a href="">关于我们</a></li><li class="header-nav-item item-login"><a href="">商家登录</a></li></ul></div></header></div><div class="content-header"><header class="header"><a class="logo"><img src="./images/logo.png" alt="logo"></a><div class="location-nav"><a class="location"><img class="city-icon" src="./images/citypoint.png" alt="cityIcon"> <span class="city-name">北京</span> <span class="checkout-city">切换城市</span></a><ul class="header-nav"><li class="header-nav-item"><a href="">首页</a></li><li class="header-nav-item"><a href="">到位App</a></li><li class="header-nav-item"><a class="active" href="">服务商</a></li><li class="header-nav-item"><a href="">商家入驻</a></li><li class="header-nav-item"><a href="">关于我们</a></li><li class="header-nav-item item-login"><a href="">商家登录</a></li></ul></div></header></div><div class="content-container"><h2>服务商</h2><div class="provider"><ul class="provider-list"></ul><div class="ad"><img src="images/seller.jpg" alt=""><div><img src="images/2.png" alt=""></div></div></div></div><div class="footer"><div class="safeguard"><h2 class="safeguard-title">到位<span>服务</span>保障</h2><div class="safeguard-desc">到位平台担保交易安全，交易未成功100%退款</div><div class="safeguard-promise"><div class="safeguard-icon"><img src="images/anquan.jpg" alt=""> <span>优选服务</span></div><div class="safeguard-icon"><img src="images/anquan.jpg" alt=""> <span>全程保障</span></div><div class="safeguard-icon"><img src="images/anquan.jpg" alt=""> <span>安全无忧</span></div></div></div><div class="hot-city-wrapper"><div class="hot-city"><div class="hot-city-title">热门城市</div><ul class="hot-city-name"></ul></div></div><div class="partner-wrapper"><div class="partner"><div class="copyright-wrapper"><p class="copyright">©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p></div></div></div></div></div><script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><script type="text/javascript" src="js/template-web.js"></script><script type="text/javascript" src="js/service-provider.js"></script><script id="provider" type="text/html">{{each data value i}}
+  <li class="provider-item">
+    <a href="comment.html">
+    <img src="{{value.imgUrl}}" alt="">
+    <span class="item-title">
+            <img src="images/home1.png" alt="">
+            <span>{{value.title}}</span>
+          </span>
+    <span class="price-rating">
+            <span class="price">已接单{{value.orderCount}}单</span>
+            <span class="rating">好评{{value.positiveRate}}</span>
+          </span>
+    </a>
+  </li>
+  {{/each}}</script><script id="hot-city" type="text/html">{{each data value i}}
+  <li class="city-name">
+    <a href="">{{value}}</a>
+  </li>
+  {{/each}}</script></body></html>

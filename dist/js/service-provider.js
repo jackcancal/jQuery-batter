@@ -1,0 +1,1 @@
+"use strict";$(function(){var t=$(".header-fixed");$(document).scroll(function(){100<$(this).scrollTop()?t.addClass("active"):t.removeClass("active")}),$.get("http://localhost:3000/service",function(t){$(".provider-list").append(template("provider",{data:t}))}),$.get("http://localhost:3000/hotCity",function(t){$(".hot-city-name").append(template("hot-city",{data:t}))})});
